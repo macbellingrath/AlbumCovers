@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC96CE66AAD79CE7512DA8E /* Pods_AlbumCovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AE880DEEA83E9BA52109EF /* Pods_AlbumCovers.framework */; };
+		E67E1ED31BCEC9440000A3AA /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E1ED21BCEC9440000A3AA /* AlbumsViewController.swift */; };
+		E67E1ED51BCEC96D0000A3AA /* AlbumsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E1ED41BCEC96D0000A3AA /* AlbumsDetailViewController.swift */; };
+		E67E1ED71BCEC9AE0000A3AA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E1ED61BCEC9AE0000A3AA /* Track.swift */; };
+		E67E1ED91BCEC9C10000A3AA /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E1ED81BCEC9C10000A3AA /* AlbumCell.swift */; };
+		E67E1EDB1BCEC9E90000A3AA /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E1EDA1BCEC9E90000A3AA /* TrackCell.swift */; };
 		E6DA31AF1BCDAF8E00CD02F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA31AE1BCDAF8E00CD02F9 /* AppDelegate.swift */; };
 		E6DA31B11BCDAF8E00CD02F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA31B01BCDAF8E00CD02F9 /* ViewController.swift */; };
 		E6DA31B41BCDAF8E00CD02F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DA31B21BCDAF8E00CD02F9 /* Main.storyboard */; };
@@ -15,6 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08AE880DEEA83E9BA52109EF /* Pods_AlbumCovers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlbumCovers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0882519719AB4429CC8755E /* Pods-AlbumCovers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumCovers.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumCovers/Pods-AlbumCovers.release.xcconfig"; sourceTree = "<group>"; };
+		D101EE48B684A0E01D4C1183 /* Pods-AlbumCovers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumCovers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumCovers/Pods-AlbumCovers.debug.xcconfig"; sourceTree = "<group>"; };
+		E67E1ED21BCEC9440000A3AA /* AlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		E67E1ED41BCEC96D0000A3AA /* AlbumsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsDetailViewController.swift; sourceTree = "<group>"; };
+		E67E1ED61BCEC9AE0000A3AA /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		E67E1ED81BCEC9C10000A3AA /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		E67E1EDA1BCEC9E90000A3AA /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		E6CA66C21BCE918A009F5322 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E6DA31AB1BCDAF8E00CD02F9 /* AlbumCovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumCovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DA31AE1BCDAF8E00CD02F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6DA31B01BCDAF8E00CD02F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +44,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC96CE66AAD79CE7512DA8E /* Pods_AlbumCovers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FFFAF6B0522CA6AF9C89091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08AE880DEEA83E9BA52109EF /* Pods_AlbumCovers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0794A1201214D2BD2186CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D101EE48B684A0E01D4C1183 /* Pods-AlbumCovers.debug.xcconfig */,
+				B0882519719AB4429CC8755E /* Pods-AlbumCovers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E6DA31A21BCDAF8E00CD02F9 = {
 			isa = PBXGroup;
 			children = (
+				E6CA66C21BCE918A009F5322 /* Podfile */,
 				E6DA31AD1BCDAF8E00CD02F9 /* AlbumCovers */,
 				E6DA31AC1BCDAF8E00CD02F9 /* Products */,
+				B0794A1201214D2BD2186CA4 /* Pods */,
+				0FFFAF6B0522CA6AF9C89091 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				E6DA31AE1BCDAF8E00CD02F9 /* AppDelegate.swift */,
+				E67E1ED21BCEC9440000A3AA /* AlbumsViewController.swift */,
+				E67E1ED61BCEC9AE0000A3AA /* Track.swift */,
+				E67E1ED81BCEC9C10000A3AA /* AlbumCell.swift */,
+				E67E1EDA1BCEC9E90000A3AA /* TrackCell.swift */,
+				E67E1ED41BCEC96D0000A3AA /* AlbumsDetailViewController.swift */,
 				E6DA31B01BCDAF8E00CD02F9 /* ViewController.swift */,
 				E6DA31B21BCDAF8E00CD02F9 /* Main.storyboard */,
 				E6DA31B51BCDAF8E00CD02F9 /* Assets.xcassets */,
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6DA31BD1BCDAF8E00CD02F9 /* Build configuration list for PBXNativeTarget "AlbumCovers" */;
 			buildPhases = (
+				E3D070094CFE426395BE801B /* Check Pods Manifest.lock */,
 				E6DA31A71BCDAF8E00CD02F9 /* Sources */,
 				E6DA31A81BCDAF8E00CD02F9 /* Frameworks */,
 				E6DA31A91BCDAF8E00CD02F9 /* Resources */,
+				4D234F2D93167DB9E97809D9 /* Embed Pods Frameworks */,
+				D8193272420C4706A267E01F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +174,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D234F2D93167DB9E97809D9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumCovers/Pods-AlbumCovers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8193272420C4706A267E01F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumCovers/Pods-AlbumCovers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D070094CFE426395BE801B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6DA31A71BCDAF8E00CD02F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67E1EDB1BCEC9E90000A3AA /* TrackCell.swift in Sources */,
 				E6DA31B11BCDAF8E00CD02F9 /* ViewController.swift in Sources */,
+				E67E1ED71BCEC9AE0000A3AA /* Track.swift in Sources */,
 				E6DA31AF1BCDAF8E00CD02F9 /* AppDelegate.swift in Sources */,
+				E67E1ED51BCEC96D0000A3AA /* AlbumsDetailViewController.swift in Sources */,
+				E67E1ED31BCEC9440000A3AA /* AlbumsViewController.swift in Sources */,
+				E67E1ED91BCEC9C10000A3AA /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +342,7 @@
 		};
 		E6DA31BE1BCDAF8E00CD02F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D101EE48B684A0E01D4C1183 /* Pods-AlbumCovers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlbumCovers/Info.plist;
@@ -256,6 +354,7 @@
 		};
 		E6DA31BF1BCDAF8E00CD02F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0882519719AB4429CC8755E /* Pods-AlbumCovers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlbumCovers/Info.plist;
@@ -284,6 +383,7 @@
 				E6DA31BF1BCDAF8E00CD02F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
