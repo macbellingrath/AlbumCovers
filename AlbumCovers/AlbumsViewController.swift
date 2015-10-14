@@ -23,11 +23,12 @@ class AlbumsViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         albumSearchBar.delegate = self
         
         albumsCollectionView.dataSource = albumData
         
-        albumData.searchForAlbum("jimi hendrix") { () -> () in
+        albumData.searchForAlbum("") { () -> () in
             self.albumsCollectionView.reloadData()
             
         }
