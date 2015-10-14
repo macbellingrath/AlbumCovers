@@ -21,10 +21,12 @@ private let darkGray = UIColor(
     alpha: 1
 )
 
+
+
 private let kDefaultProgressColor       = salmonColor
 private let kDefaultProgressTrackColor  = lightGray
-private let kDefaultPlayColor           = darkGray
-private let kDefaultPauseColor          = darkGray
+private let kDefaultPlayColor           = UIColor.orangeColor()
+private let kDefaultPauseColor          = UIColor.orangeColor()
 
 private let kInnerRadiusScaleFactor = CGFloat(0.05)
 

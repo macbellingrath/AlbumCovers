@@ -40,8 +40,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-i5-YBT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-i5-YBT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                     <animations/>
                                                 </imageView>
                                             </subviews>
@@ -140,37 +140,58 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twf-lV-VLE" customClass="SVGPlayButton" customModule="SVGPlayButton">
-                                                    <rect key="frame" x="272" y="9.5" width="40" height="30.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-JB-qkz">
+                                                    <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1a-p4-ajN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="33K-gb-sdS">
+                                                            <rect key="frame" x="279" y="0.0" width="80" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj4-Cd-Hto">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                                    <animations/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <state key="normal" title="0.99">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="3RE-S5-ogf" eventType="touchUpInside" id="eXg-Se-NBw"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twf-lV-VLE" customClass="SVGPlayButton" customModule="SVGPlayButton">
+                                                                    <rect key="frame" x="40" y="0.0" width="40" height="30"/>
+                                                                    <animations/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="40" id="1fh-0e-eNm"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="TBH-yI-f5N"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <action selector="playButtonPressed:" destination="3RE-S5-ogf" eventType="touchUpInside" id="Cdm-ae-fZY"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </stackView>
+                                                    </subviews>
                                                     <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="1fh-0e-eNm"/>
-                                                        <constraint firstAttribute="height" constant="30" id="TBH-yI-f5N"/>
-                                                    </constraints>
-                                                    <connections>
-                                                        <action selector="playButtonPressed:" destination="3RE-S5-ogf" eventType="touchUpInside" id="Cdm-ae-fZY"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1a-p4-ajN">
-                                                    <rect key="frame" x="8" y="8" width="264" height="33.5"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </stackView>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="t1a-p4-ajN" secondAttribute="bottom" id="7pC-Cs-c4B"/>
-                                                <constraint firstItem="Twf-lV-VLE" firstAttribute="trailing" secondItem="DpA-Ce-5eV" secondAttribute="trailingMargin" id="HJG-AY-vS2"/>
-                                                <constraint firstItem="t1a-p4-ajN" firstAttribute="top" secondItem="DpA-Ce-5eV" secondAttribute="topMargin" id="UnC-Ez-xCB"/>
-                                                <constraint firstItem="t1a-p4-ajN" firstAttribute="leading" secondItem="DpA-Ce-5eV" secondAttribute="leadingMargin" id="pDs-LO-bxB"/>
-                                                <constraint firstItem="Twf-lV-VLE" firstAttribute="leading" secondItem="t1a-p4-ajN" secondAttribute="trailing" id="rLc-o0-W05"/>
-                                                <constraint firstItem="Twf-lV-VLE" firstAttribute="centerY" secondItem="DpA-Ce-5eV" secondAttribute="centerY" id="tDj-Nq-s9f"/>
+                                                <constraint firstItem="Sve-JB-qkz" firstAttribute="leading" secondItem="DpA-Ce-5eV" secondAttribute="leadingMargin" id="J2x-gp-721"/>
+                                                <constraint firstItem="Sve-JB-qkz" firstAttribute="top" secondItem="DpA-Ce-5eV" secondAttribute="topMargin" id="Olf-8Q-Umw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Sve-JB-qkz" secondAttribute="trailing" id="x8z-2W-0fR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="buyButton" destination="Fj4-Cd-Hto" id="Ik9-re-wXO"/>
                                             <outlet property="playButton" destination="Twf-lV-VLE" id="XFu-u2-PQ2"/>
                                             <outlet property="trackNameLabel" destination="t1a-p4-ajN" id="D9k-x6-UJ3"/>
                                         </connections>

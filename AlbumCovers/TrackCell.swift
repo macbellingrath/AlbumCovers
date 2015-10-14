@@ -8,8 +8,21 @@
 
 import UIKit
 import SVGPlayButton
+import AVFoundation
+import SafariServices
 
 class TrackCell: UITableViewCell {
+    
+    var trackInfo: Track! {
+        didSet {
+            
+            if let price = trackInfo.trackPrice {
+           
+                buyButton.setTitle("\(price)" , forState: .Normal)
+            }
+        }
+    }
+
     
     @IBOutlet weak var trackNameLabel: UILabel!
     
@@ -20,6 +33,7 @@ class TrackCell: UITableViewCell {
         print("Pressed")
     }
     
+    @IBOutlet weak var buyButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,14 +45,37 @@ class TrackCell: UITableViewCell {
         
         playButton.willPlay = { self.willPlayHandler() }
         playButton.willPause = { self.willPauseHandler() }
+      
+    }
+    @IBAction func buyButtonPressed(sender: UIButton) {
+        
+        if let urlStr =  trackInfo.trackViewURL {
+            if let url = NSURL(string: urlStr) {
+                
+               UIApplication.sharedApplication().openURL(url)
+                
+            }
+        }
+        
     }
     
+    //Play Audio
+    var player: AVAudioPlayer?
     
     private func willPlayHandler() {
+        
+        if let data = trackInfo.mediaData ?? trackInfo.getMedia() {
+      
+        player = player ?? (try? AVAudioPlayer(data: data))
+        
+        }
+        
         print("willPlay")
+        player?.play()
     }
     
     private func willPauseHandler() {
         print("willPause")
+        player?.pause()
     }
 }

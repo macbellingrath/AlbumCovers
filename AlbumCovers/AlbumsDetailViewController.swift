@@ -21,6 +21,10 @@ class AlbumDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+                
+        
         albumNameLabel.text = albumInfo.albumName
         albumImageView.image = albumInfo.albumImage ?? albumInfo.getImage()
         albumImageView.contentMode = .ScaleAspectFit
@@ -82,6 +86,8 @@ class TracksDataSource: NSObject, UITableViewDataSource {
         
         //subscript to obtain track
         let track = tracks[indexPath.row]
+        
+        cell.trackInfo = track
         
         cell.trackNameLabel?.text = track.trackName
         
